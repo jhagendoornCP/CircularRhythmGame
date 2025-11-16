@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b0e684ba75e4d7794f6b772d34955f, type: 3}
+  m_Name: Movement
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmPlayer.PlayerMovementData
+  jumpMoveInTime: 0.05
+  jumpMoveOutTime: 0.05
+  jumpMaxHoldTime: 1
+  jumpOffset: 0.8

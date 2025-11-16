@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6505553ba338442909f10798afeb4dc9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - beatEvents: {fileID: 11400000, guid: 80654d7f0b145482aa9cc28ba0269464, type: 2}
+  - noteRushTimeStream: {fileID: 11400000, guid: 43ad042eec4124e1590cf2783ce547ea, type: 2}
+  - laneDivider: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d0d235258e6b445d4ab723969a5396c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - levelData: {instanceID: 0}
+  - startStream: {fileID: 11400000, guid: c6d3bd69f51f34a18bb18446d0ec5e37, type: 2}
+  - noteRushTimeStream: {fileID: 11400000, guid: 43ad042eec4124e1590cf2783ce547ea, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

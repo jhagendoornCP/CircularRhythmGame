@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e83fd9f269264d8db1696b408ba74be, type: 3}
+  m_Name: 1 15
+  m_EditorClassIdentifier: Assembly-CSharp::RhythmLevel.LevelBeatEvent
+  beatTime: 56
+  lane: 3
+  stream: {fileID: 11400000, guid: 80654d7f0b145482aa9cc28ba0269464, type: 2}
+  beatObject: {fileID: 2696527840533714998, guid: 536b30233752544488f161e74ddb0c26, type: 3}

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3db8f5401e9a040838e85660179b855d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scoredStream: {fileID: 11400000, guid: ff6d6503e9d55417994ab3e0284ce185, type: 2}
+  - maxComboStream: {fileID: 11400000, guid: 4543c24c261fd4979aae31961c9e0248, type: 2}
+  - currentScoreStream: {fileID: 11400000, guid: f5362afa1963c4907b1d534dd3c10569, type: 2}
+  - currentComboStream: {fileID: 11400000, guid: 6bfa91c51ffba400cb61a7a92e75ce45, type: 2}
+  - currentMultiplierStream: {fileID: 11400000, guid: e93db3841f4734f6399cfc5edeca61b9, type: 2}
+  - progressToNextMultiplierStream: {fileID: 11400000, guid: fca3f3ed6b3b24e27891182785e20e2e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
