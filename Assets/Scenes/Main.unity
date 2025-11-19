@@ -2443,8 +2443,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310976961}
-  - component: {fileID: 1310976960}
   - component: {fileID: 1310976962}
+  - component: {fileID: 1310976960}
   m_Layer: 0
   m_Name: Song player
   m_TagString: Untagged
@@ -2584,6 +2584,7 @@ MonoBehaviour:
   deltaFrameDspTime: 0
   deltaSyncDspTime: 0
   deltaFilterDspTime: 0
+  allowEstimatedAndAudioSettingsDesyncAmount: 0.1
 --- !u!1 &1366370941
 GameObject:
   m_ObjectHideFlags: 0

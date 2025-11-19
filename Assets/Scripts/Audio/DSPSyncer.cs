@@ -1,5 +1,6 @@
 
 
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -16,6 +17,9 @@ public class DSPSyncer : MonoBehaviour
     public double deltaFrameDspTime;
     public double deltaSyncDspTime;
     public double deltaFilterDspTime;
+    
+    // If currentEstimatedDspTime is more than this amount greater than AudioSettings.dspTime, 
+    public double allowEstimatedAndAudioSettingsDesyncAmount = 0.1f;
 
     void Awake()
     {
@@ -33,16 +37,10 @@ public class DSPSyncer : MonoBehaviour
     {
         deltaFrameDspTime = currentEstimatedDspTime - lastFrameDspTime;
         lastFrameDspTime = currentEstimatedDspTime;
+        UpdateFilterTime();
         SyncDspTime();
 
-        // Debug.Log("DSP syncer says current time: " + currentEstimatedDspTime + " and the audio settings say " + AudioSettings.dspTime);
-    }
-
-    void OnAudioFilterRead(float[] data, int channels)
-    {
-        lastFilterDspTime = currentFilterDspTime;
-        currentFilterDspTime = AudioSettings.dspTime;
-        deltaFilterDspTime = currentFilterDspTime - lastFilterDspTime;
+        Debug.Log("DSPSyncer current time (adds delta time): " + currentEstimatedDspTime + ". AudioSettings.dspTime straight is: " + AudioSettings.dspTime);
     }
 
     public void SongStartsAt(double time)
@@ -55,16 +53,25 @@ public class DSPSyncer : MonoBehaviour
         return currentEstimatedDspTime - songStartedTime;
     }
 
+    void UpdateFilterTime()
+    {
+        lastFilterDspTime = currentFilterDspTime;
+        currentFilterDspTime = AudioSettings.dspTime;
+        deltaFilterDspTime = currentFilterDspTime - lastFilterDspTime;
+    }
+
     void SyncDspTime()
     {
         double last = currentEstimatedDspTime;
         // duplicate DSP time, so we update with unscaled delta time
         if (lastFilterDspTime == currentFilterDspTime)
         {
+            Debug.Log("duplicate");
             currentEstimatedDspTime += Time.unscaledDeltaTime;
         }
         else
         {
+            Debug.Log("no duplicate");
             lastFilterDspTime = currentFilterDspTime;
             currentEstimatedDspTime = currentFilterDspTime;
         }
